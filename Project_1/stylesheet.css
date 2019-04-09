@@ -1,0 +1,311 @@
+body, html { 
+	height: 100%; 
+	margin: auto;
+	padding: auto;
+	overflow-x: hidden;
+	overflow-y: show;
+	background-color: #202020;
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+	scroll-behavior: smooth;
+	}
+
+main {     animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */ }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px #000000;
+    box-shadow: 0 8px 6px -6px #202020;
+  }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 70px;
+  text-decoration: none;
+  font-size: 17px;
+  border-color: white;
+  opacity: 1;
+  transition: 0.2s;
+   font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;  
+}
+
+.topnav a:hover.active 
+	{
+	display: inline-block;
+	border-bottom: 2px solid;
+	margin-top: 0px;
+	margin-right: 0px;
+	color: #ff6600;
+	 opacity: 1;
+  transition: 0.2s;
+	}
+.topnav a.Education
+	{
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+	font-size: 22px; 
+	color: #ff6600;
+	}
+/*I'm sloppy-----------------------------------------------------------------------------------------------*/	
+.top-container {
+  grid-template-areas:
+    'showcase showcase ';
+    color: white;
+}
+
+/* Annoying ass picture that took too long to get to work--------------------------------------------------*/
+.showcase {
+  grid-area: showcase;
+  min-height: 410px; max-height: 410px;
+  min-width: 1310px; max-width: 1310px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/PostcardStamfordHighSchool1910.jpg/800px-PostcardStamfordHighSchool1910.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: static;
+  padding: 3rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  z-index: 0;
+}
+
+.info {
+  text-align: left;
+  padding: 3rem 3rem;
+  color: grey;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 40px;
+  background-color: white;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(25, 25, 25, 0.8);
+  text-align: left;
+  font-size: 14px;
+}
+
+/* text that is also annoying??----------------------------------------------------------------------------*/
+
+p.infront{ 
+	text-shadow: 3px 3px 5px #000000;
+	font-size: 80px;
+	line-height: 0px;
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+	position: right;
+ }
+
+a.gianttext{ 
+	text-decoration: none;
+	color: white;
+ }
+
+
+div.practice { background-color: #202020;
+ width: auto; 
+    height: auto;  }
+
+ div.black-bg { font-size: 30px;
+ background-color: #303030;
+   border: 2px solid #ff6600;
+  width: auto; 
+    height: auto; 
+    margin: 100px;
+    padding: 10px;
+    box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75)
+ }
+
+ div.popcorn { font-size: 24px;
+ background-color: #101010;
+  width: auto; 
+    height: 100px; 
+    margin: 100px;
+    padding: 10px;
+    box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75)
+    position: center;
+ }
+
+div.john  {
+	position: center;
+	height: auto;
+	color: white;
+	padding: 20px;
+	background-color: #303030;
+    border: 2px solid #ff6600;
+	margin: 50px;
+	box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+	line-height: 1.5;
+	font-size: 18px;
+	float: left;
+	  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+img.sh { 
+width: 200px;
+height: 100px; 
+padding: 100px;}
+
+h1 {
+	c
+	padding-left: 70px;
+	color: #ff6600;
+}
+
+div.walter { 
+	color: #e5e5e5;
+ 	background-color: #101010;
+  	width: auto; 
+    height: auto; 
+    margin: 70px;
+    position: center;
+    padding: 50px;
+    line-height: 1.2;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+ }
+
+ .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #000000;
+   -webkit-box-shadow: 0 8px 6px -6px #000000;
+   box-shadow: 3 8px 6px -6px #202020;
+}
+
+
+hr {
+	 box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+}
+.monstah_cado {
+ box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+  max-width: 300px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  padding: 20px;
+  border: 2px solid #FFFFFF;
+  background-color: #202020;
+}
+
+.titlerrr {
+  color: grey;
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #ff6600;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+}
+
+p.f_word {
+	font-size: 28px;
+	color: white;
+}
+
+
+p.s_word {
+	font-size: 20px;
+	color: white;
+}
+
+div.w_word { font-size: 24px;
+ background-color: #303030;
+   border: 2px solid #ff6600;
+  width: 500px; 
+    height: auto; 
+    margin: 100px;
+    margin-right: 140px;
+    padding: 10px;
+    box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+    float: left;
+ }
+
+ p.thanku
+{ padding-left: 20px;
+font-style: italic; }
+
+.follower {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+  circle {
+    fill: #ff6600;
+    width: 100px;
+    height:100px;
+  }
+
