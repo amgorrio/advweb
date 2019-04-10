@@ -1,0 +1,18 @@
+img { 
+	width: 700px;
+	height:  300px;
+	padding-right: 100px;
+	padding-left: 250px;
+	margin: auto;
+}
+
+p {
+	position: center;
+	padding: 50px;
+	margin: auto;	
+}
+
+h1 {position: center;
+margin:auto;
+padding-left: 250px;
+}
