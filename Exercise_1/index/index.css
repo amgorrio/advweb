@@ -1,0 +1,66 @@
+body { 
+	font-size: 30px;
+	text-align: center; 
+	color: white;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+
+}
+p { text-decoration: none; }
+p.list1 {
+	text-align: center;
+	color: white;
+	font-family: century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 20px;
+
+}
+
+img.e {
+height: 50%; 
+width: 50%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+img.e1 {
+height: 20%; 
+width: 20%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+img.e2 {
+height: 20%; 
+width: 20%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+img.e3 {
+height: 20%; 
+width: 20%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+img.e4 {
+height: 20%; 
+width: 20%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+img.e5 {
+height: 20%; 
+width: 20%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+img.e6 {
+height: 20%; 
+width: 20%;
+padding:1px;
+border:1px solid #ffffff;
+}
+
+html { background-color: #65909A;}
