@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>OurPets</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<main>
+  <div class="supb">OurPets
+  </div>
+<div class="topnav" id="myTopnav">
+   <a href="index.html" class="activeF" id="b2t">yessirS</a>
+  <a href="index.html" class="active" id="b2t">Home</a>
+  <a href="index-dogs.html" class="active">Dogs</a>
+  <a href="index-cats.html" class="active">Cats</a>
+  <a href="index-submit.html" class="active">Submit Your Own</a>
+  <a href="index.html" class="activeF" id="b2t">ye</a>
+  
+</a>
+</div>
+
+<!--yes-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="luna1.JPG" style="width:100%">
+  <div class="text"><em>A Legend</em></div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="luna2.JPG" style="width:100%">
+  <div class="text"><em>A Queen</em></div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="luna3.JPG" style="width:100%">
+  <div class="text"><em>A Cat</em></div>
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<!--end of yes-------->
+
+<div class="practice">      
+  
+  <br><div class="black-bg">
+    
+    <p class="hometextwork"><center>
+    The cat shown above is my old cat Luna, she is a star! She inspired me to make this website. Thank you Luna!</center></p>
+  </div>
+  <div class="popcorn">
+    <p><center>Angel Gorrio | DMD 3420 Advanced Web | Networked Communities | Project 2</center></p>
+  </div>
+</div>
+
+<div class="footer">
+  <p></p>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</main>
+</body>
+</html>

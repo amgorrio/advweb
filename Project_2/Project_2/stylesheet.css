@@ -1,0 +1,304 @@
+body, html { 
+	height: 100%; 
+	margin: auto;
+	padding: auto;
+	overflow-x: hidden;
+	overflow-y: show;
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+	}
+
+  * {box-sizing: border-box;} 
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+ font-family: Arial, Helvetica, sans-serif; 
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 90px;
+  text-shadow: 3px 3px 3px #000000;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  text-shadow: 2px 2px 2px #000000;
+}
+h3 {
+  color: grey;
+}
+.dot {
+  height: 0px;
+  width: 0px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+/*------------------------------------------------------------ Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 0}
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 500px) {
+  .text {font-size: 11px}
+}
+main {     animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */ }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------------------------DONT WORRY ABOUT ABOVE-----------*/
+div.topnav{ 
+z-index: 3; }
+div.supb{
+  background-color: black;
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #1e1e1e;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px #000000;
+    box-shadow: 0 8px 6px -6px #202020;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 70px;
+  text-decoration: none;
+  font-size: 14px;
+  border-color: black;
+  opacity: 1;
+  transition: 0.2s;
+   ;  
+}
+
+.topnav a:hover.active 
+	{
+	display: inline-block;
+	border-bottom: 2px solid;
+	margin-top: 0px;
+	margin-right: 0px;
+	color: #99cfe0;
+	 opacity: 1;
+  transition: 0.2s;
+	}
+.topnav a.active
+	{ 
+
+    border-bottom: 2px solid;
+	font-size: 22px; 
+	border-color: black;
+	}
+.topnav a.activeF
+  { 
+color: #1e1e1e;
+    border-bottom: 2px solid;
+  font-size: 22px; 
+  border-color: black;
+  }
+
+/*--------------------- sometimes I yee, other times I haw---------------------------------------------------------*/	
+
+
+div.practice { background-color: #b9c4c7;
+ width: auto; 
+    height: auto;  }
+
+ div.black-bg { font-size: 30px;
+ background-color: #99cfe0;
+   border: 2px solid #white;
+  width: auto; 
+    height: auto; 
+    margin: 100px;
+    padding: 10px;
+    box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75)
+ }
+
+ div.popcorn { font-size: 24px;
+ background-color: #grey;
+  width: auto; 
+    height: 100px; 
+    margin: 100px;
+    padding: 10px;
+    box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75)
+    position: center;
+ }
+/*---------------------------------------------------homepage stuff is done here -----------------------------------*/
+h1 {padding-top: 100px;}
+div.pictext {
+background-color: #1e1e1e;
+color: white;
+border: 100px; 
+width: auto;
+height: 700px;
+font-size: 25px;
+}
+
+img.picture { 
+width: 520px;
+height: auto;
+padding: 0; 
+float: left;}
+
+img.picture2 { 
+width: 520px;
+height: auto;
+padding: 0; 
+float: right;}
+
+
+.submit {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+div.whitetext {
+
+color: white;
+padding-top: 60px;
+padding-bottom: 40px;
+font-size: 50px;
+}
+
+
+ .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #1e1e1e;
+   -webkit-box-shadow: 0 8px 6px -6px #000000;
+   box-shadow: 3 8px 6px -6px #202020;
+   z-index: 3;
+}
+
+
+/*------------------------------------------------grrrrrrrrrrrrrrrrrrrrrrr-----------*/
+
+hr {
+	 box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
+}
+
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #ff6600;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+}
+
+
+.submit {
+  background-color: #1e1e1e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
